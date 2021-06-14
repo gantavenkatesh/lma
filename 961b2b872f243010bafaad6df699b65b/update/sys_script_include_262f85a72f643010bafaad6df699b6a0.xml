@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_587323_lma.lma</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>lma</name>
+        <script><![CDATA[var lma = Class.create();
+lma.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getDateDiff: function() {
+
+        var d1 = new GlideDate();
+        d1.setDisplayValue(this.getParameter("sysparm_start"));
+        var d2 = new GlideDate();
+        d2.setDisplayValue(this.getParameter("sysparm_end"));
+
+        var duration = GlideDate.subtract(d1, d2);
+        return duration.getNumericValue();
+    },
+
+    getLeaveBucket: function() {
+
+        var gr = new GlideRecord("x_587323_lma_leave_bucket");
+        gr.addQuery("employee", this.getParameter("sysparm_user"));
+        gr.addQuery("type", this.getParameter("sysparm_leavetype"));
+        gr.query();
+
+        if (gr.next()) {
+            var leaveDetails = {};
+            leaveDetails.accrued = " " + gr.accrued;
+            leaveDetails.taken = " " + gr.taken;
+            leaveDetails.balance = " " + gr.balance;
+
+            return JSON.stringify(leaveDetails);
+
+        }
+    },
+
+    type: 'lma'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-10 22:59:32</sys_created_on>
+        <sys_id>262f85a72f643010bafaad6df699b6a0</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>lma</sys_name>
+        <sys_package display_value="Leave Management Application" source="x_587323_lma">961b2b872f243010bafaad6df699b65b</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Leave Management Application">961b2b872f243010bafaad6df699b65b</sys_scope>
+        <sys_update_name>sys_script_include_262f85a72f643010bafaad6df699b6a0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-13 12:42:26</sys_updated_on>
+    </sys_script_include>
+</record_update>

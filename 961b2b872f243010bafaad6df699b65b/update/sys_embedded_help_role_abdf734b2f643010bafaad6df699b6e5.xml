@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_587323_lma.leave_bucket_user" name="x_587323_lma.leave_bucket_user">abdffbc72f643010bafaad6df699b625</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-09 22:22:59</sys_created_on>
+        <sys_id>abdf734b2f643010bafaad6df699b6e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>abdffbc72f643010bafaad6df699b625</sys_name>
+        <sys_package display_value="Leave Management Application" source="x_587323_lma">961b2b872f243010bafaad6df699b65b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management Application">961b2b872f243010bafaad6df699b65b</sys_scope>
+        <sys_update_name>sys_embedded_help_role_abdf734b2f643010bafaad6df699b6e5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-09 22:22:59</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

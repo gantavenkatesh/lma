@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>half_date</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>set Duration for Half Day</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+  var halfd= g_form.getValue("half_date");
+	if (halfd=='true'){
+		g_form.setValue("duration",'0.5');
+		
+	}
+	
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-11 14:04:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d70fd87b2f6c3010bafaad6df699b652</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>set Duration for Half Day</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Leave Management Application" source="x_587323_lma">961b2b872f243010bafaad6df699b65b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management Application">961b2b872f243010bafaad6df699b65b</sys_scope>
+        <sys_update_name>sys_script_client_d70fd87b2f6c3010bafaad6df699b652</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-11 14:04:31</sys_updated_on>
+        <table>x_587323_lma_leave_management</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
