@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="status" table="x_587323_lma_venkatesh_1" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <name>x_587323_lma_venkatesh_1</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-06-16 14:34:22</sys_created_on>
+            <sys_id>53b716d12ff03010bafaad6df699b633</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>status</sys_name>
+            <sys_package display_value="Leave Management Application" source="x_587323_lma">961b2b872f243010bafaad6df699b65b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Leave Management Application">961b2b872f243010bafaad6df699b65b</sys_scope>
+            <sys_update_name>sys_choice_x_587323_lma_venkatesh_1_status</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-06-16 14:34:22</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>2</dependent_value>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>approved</label>
+            <language>en</language>
+            <name>x_587323_lma_venkatesh_1</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-06-16 14:47:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d5c79e912ff03010bafaad6df699b6f1</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-06-16 14:49:14</sys_updated_on>
+            <value>a</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>2</dependent_value>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>closed</label>
+            <language>en</language>
+            <name>x_587323_lma_venkatesh_1</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-06-16 14:47:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7aba52d12ff03010bafaad6df699b619</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-06-16 14:49:20</sys_updated_on>
+            <value>c</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>1</dependent_value>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>open</label>
+            <language>en</language>
+            <name>x_587323_lma_venkatesh_1</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-06-16 14:34:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>17a712d12ff03010bafaad6df699b623</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-06-16 14:49:23</sys_updated_on>
+            <value>o</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>1</dependent_value>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>submitted</label>
+            <language>en</language>
+            <name>x_587323_lma_venkatesh_1</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-06-16 14:34:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1bb7169d2fb03010bafaad6df699b62c</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-06-16 14:49:27</sys_updated_on>
+            <value>s</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="venkatesh_1" max_length="40" name="x_587323_lma_venkatesh_1" sizeclass="0" type="collection">
+        <element choice="1" label="Priority" max_length="40" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="1" value="1"/>
+                <element inactive_on_update="false" label="2" value="2"/>
+            </choice>
+        </element>
+        <element choice="1" dependent="priority" dependent_on_field="priority" label="Status" max_length="40" name="status" type="choice" use_dependent_field="true">
+            <choice>
+                <element dependent_value="2" inactive_on_update="false" label="approved" value="a"/>
+                <element dependent_value="2" inactive_on_update="false" label="closed" value="c"/>
+                <element dependent_value="1" inactive_on_update="false" label="open" value="o"/>
+                <element dependent_value="1" inactive_on_update="false" label="submitted" value="s"/>
+            </choice>
+        </element>
+    </element>
+</database>
